@@ -1,0 +1,243 @@
+<!DOCTYPE html><html lang="fa" dir="rtl" data-th="tur"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><title>نفس‌نگار</title>
+<link rel="manifest" href="manifest.webmanifest"><meta name="theme-color" content="#0f766e"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="نفس‌نگار"><link rel="icon" href="icons/icon-192.png"><link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f2f6f4;--card:#fff;--tx:#1b2a25;--mu:#6a7b74;--pr:#0f766e;--pr2:#14b8a6;--ac:#b7791f;--bad:#c0392b;--bd:#e0e8e4;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+
+
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--tx);font-family:VazirLocal,Vazirmatn,Tahoma,sans-serif;line-height:1.7}
+header{background:linear-gradient(135deg,var(--pr),var(--pr2));color:var(--on);padding:16px;display:flex;justify-content:space-between;align-items:center;border-radius:0 0 22px 22px}
+header h1{margin:0;font-size:20px;font-weight:800}header small{opacity:.85}
+.sc{text-align:center;background:rgba(255,255,255,.18);border-radius:14px;padding:4px 14px}.sc b{font-size:24px}
+main{max-width:760px;margin:0 auto;padding:12px}
+nav.t{display:flex;gap:6px;overflow-x:auto;padding:4px 0 10px}nav.t button{flex:none;border:1px solid var(--bd);background:var(--card);color:var(--tx);font:inherit;font-size:13px;padding:7px 14px;border-radius:20px;cursor:pointer}
+nav.t button.on{background:var(--pr);color:var(--on);border-color:var(--pr)}
+.card{background:var(--card);border:1px solid var(--bd);border-radius:16px;padding:14px;margin-bottom:12px;box-shadow:0 2px 10px rgba(0,0,0,.04)}
+.card h3{margin:0 0 8px;font-size:15px;display:flex;justify-content:space-between;align-items:center}.card h3 small{color:var(--pt);font-weight:600}
+.db{display:flex;gap:6px;align-items:center;flex-wrap:wrap;justify-content:center}.db button,.db select{font:inherit;border:1px solid var(--bd);background:var(--card);color:var(--tx);border-radius:10px;padding:5px 10px}
+.db b{flex:1;text-align:center;min-width:150px}
+.pr{display:flex;justify-content:space-between;align-items:center;gap:6px;padding:6px 0;border-bottom:1px dashed var(--bd);flex-wrap:wrap}
+.b{font:inherit;font-size:12px;border:1px solid var(--bd);background:transparent;color:var(--tx);padding:5px 9px;border-radius:10px;cursor:pointer;margin-inline-start:4px}.b i{font-style:normal;color:var(--ac);margin-inline-start:4px}.b.on{background:var(--pr);color:var(--on);border-color:var(--pr)}.b.on i{color:var(--on)}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}.chip{font:inherit;font-size:12.5px;border:1px solid var(--bd);background:transparent;color:var(--tx);padding:4px 10px;border-radius:14px;cursor:pointer}.chip.on{background:var(--pr);color:var(--on);border-color:var(--pr)}.chip.on.neg{background:var(--bad);border-color:var(--bad)}
+input[type=range]{width:100%;accent-color:var(--pr)}input[type=number],input[type=text],textarea{font:inherit;width:100%;border:1px solid var(--bd);background:var(--bg);color:var(--tx);border-radius:10px;padding:8px}
+.row{display:flex;gap:8px;align-items:center}.row>*{flex:1}.row button{flex:none}
+.btn{font:inherit;background:var(--pr);color:var(--on);border:0;border-radius:10px;padding:8px 16px;cursor:pointer}.btn.r{background:var(--bad)}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}.st{text-align:center}.st b{display:block;font-size:22px;color:var(--pt)}.st span{font-size:12px;color:var(--mu)}
+.bar{height:9px;background:var(--bd);border-radius:6px;overflow:hidden;margin:3px 0 9px}.bar div{height:100%;background:var(--pr)}
+.hint{color:var(--mu);font-size:12px;margin:0 0 6px}
+@font-face{font-family:VazirLocal;src:url(fonts/vazirmatn.woff2) format('woff2');font-weight:100 900}
+.sel{font:inherit;border:1px solid var(--bd);background:var(--card);color:var(--tx);border-radius:10px;padding:8px}
+
+:root[data-th="tur"]{--pr:#0f766e;--pr2:#2bc6b4;--pt:#0f766e;--on:#fff;--bg:#f0f7f6}
+:root[data-th="grn"]{--pr:#4f8f6b;--pr2:#a5d6b8;--pt:#3f7a5a;--on:#fff;--bg:#f2f7f3}
+:root[data-th="blu"]{--pr:#4a78b5;--pr2:#a9cbee;--pt:#3b66a1;--on:#fff;--bg:#f2f6fb}
+:root[data-th="red"]{--pr:#c4605f;--pr2:#f2aaa6;--pt:#b04a49;--on:#fff;--bg:#fbf3f2}
+:root[data-th="yel"]{--pr:#e6b422;--pr2:#fbe18a;--pt:#8a6600;--on:#2b2200;--bg:#fcf9ee}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0d1513;--card:#15211e;--tx:#e8f0ec;--mu:#93a39c;--ac:#e0b04a;--bad:#f0766a;--bd:#25352f;--pt:var(--pr2)}}
+:root[data-theme="dark"]{--bg:#0d1513;--card:#15211e;--tx:#e8f0ec;--mu:#93a39c;--ac:#e0b04a;--bad:#f0766a;--bd:#25352f;--pt:var(--pr2)}
+header{text-shadow:0 1px 3px rgba(0,0,0,.22)}:root[data-th="yel"] header{text-shadow:none}
+.chip.on.neg,.btn.r{color:#fff}
+.th{display:flex;gap:8px;margin-top:8px}.th button{width:22px;height:22px;border-radius:50%;border:2px solid rgba(255,255,255,.85);padding:0;cursor:pointer}.th button.on{outline:3px solid var(--on);outline-offset:1px}
+.ded{max-width:760px;margin:6px auto 24px;padding:14px 18px;text-align:center;color:var(--mu);font-size:12.5px;line-height:2;border-top:1px dashed var(--bd)}.ded b{color:var(--pt)}
+
+body{background:radial-gradient(60% 38% at 92% 0%,color-mix(in srgb,var(--pr2) 38%,transparent),transparent),radial-gradient(50% 32% at 0% 45%,color-mix(in srgb,var(--pr) 20%,transparent),transparent),var(--bg);background-attachment:fixed}
+nav.t,main>.card:first-child{background:color-mix(in srgb,var(--card) 52%,transparent);-webkit-backdrop-filter:blur(18px) saturate(170%);backdrop-filter:blur(18px) saturate(170%);border:1px solid color-mix(in srgb,var(--tx) 12%,transparent);box-shadow:0 8px 24px rgba(0,0,0,.08),inset 0 1px 0 rgba(255,255,255,.45)}
+nav.t{position:sticky;top:calc(env(safe-area-inset-top,0px) + 6px);z-index:20;border-radius:20px;padding:6px;margin-bottom:12px;scrollbar-width:none}nav.t::-webkit-scrollbar{display:none}
+nav.t button{background:color-mix(in srgb,var(--card) 40%,transparent);border:1px solid color-mix(in srgb,var(--tx) 10%,transparent);transition:background .35s,color .35s,transform .25s,box-shadow .35s}
+nav.t button:active{transform:scale(.94)}
+nav.t button.on{background:linear-gradient(135deg,var(--pr),var(--pr2));color:var(--on);border-color:transparent;box-shadow:0 4px 14px color-mix(in srgb,var(--pr) 45%,transparent)}
+.lg{height:30px;width:30px;border-radius:8px;object-fit:contain;vertical-align:middle}
+</style></head><body>
+<header><div><h1><img class="lg" src="logo.png" alt="" onerror="this.replaceWith('🌙')"> نفس‌نگار</h1><small>«حاسبوا أنفسکم قبل أن تحاسبوا»</small><div class="th" id="th"></div></div><div class="sc"><small>امتیاز روز</small><br><b id="tot">۰</b></div></header>
+<main><div class="card"><div class="db" id="db"></div></div><nav class="t" id="tabs"></nav><div id="app"></div></main>
+<footer class="ded"><b>هدیه‌ای از بنده‌ی حقیر سیدحسین — برای شهادتم دعا کنید</b><br>تقدیم به شهید علی (مهران) بلوچی که محاسبه نفس را به ما یاد داد<br>و به یاد قائد شهید، قدس‌الله نفسه الزکیه</footer>
+<script>
+const FA=s=>String(s).replace(/\d/g,d=>'۰۱۲۳۴۵۶۷۸۹'[d]);
+const MN=['فروردین','اردیبهشت','خرداد','تیر','مرداد','شهریور','مهر','آبان','آذر','دی','بهمن','اسفند'];
+const pf=new Intl.DateTimeFormat('en-u-ca-persian-nu-latn',{year:'numeric',month:'numeric',day:'numeric'});
+const hf=new Intl.DateTimeFormat('en-u-ca-islamic-umalqura-nu-latn',{month:'numeric'});
+function jp(d){const o={};pf.formatToParts(d).forEach(p=>{if(['year','month','day'].includes(p.type))o[p.type]=+p.value});return o}
+function jg(y,m,d){let b=new Date(y+621,2,18,12);for(let i=0;i<6;i++){const t=jp(b);if(t.month==1&&t.day==1)break;b=new Date(b.getFullYear(),b.getMonth(),b.getDate()+1,12)}
+const off=m<=6?(m-1)*31:186+(m-7)*30;return new Date(b.getFullYear(),b.getMonth(),b.getDate()+off+d-1,12)}
+const key=d=>{const j=jp(d);return j.year+'/'+j.month+'/'+j.day};
+const now=()=>{const n=new Date();return new Date(n.getFullYear(),n.getMonth(),n.getDate(),12)};
+let D=now(),TAB=0,S;
+try{S=JSON.parse(localStorage.getItem('nafs_v1'))}catch(e){}
+if(!S||!S.days)S={days:{},cu:{mus:[],mak:[]}};
+function fixS(){S.cu=S.cu||{mus:[],mak:[]};S.set=Object.assign({city:'تهران',lat:35.6892,lng:51.389,pr:[1,1,1,1,1],lead:0,night:true,nt:'23:00',theme:'tur'},S.set||{})}fixS();
+const save=()=>{try{localStorage.setItem('nafs_v1',JSON.stringify(S))}catch(e){}};
+const PR=['صبح','ظهر','عصر','مغرب','عشاء'],PT=[['اول وقت',6],['میان وقت',4],['آخر وقت',2]];
+const OB=[['tah','رعایت طهارت',10,'وضوی صحیح|غسل‌های واجب|پاکی بدن از نجاست|پاکی لباس نمازگزار|پاکی مکان نماز|تیمم در صورت نیاز|پرهیز از نجاسات'],
+['haq','رعایت حق‌الناس',10,'حقوق والدین|حقوق همسر|حقوق فرزندان|حقوق همسایه|پرداخت بدهی‌ها|رد مظالم|خمس و زکات|امانت‌داری|صله رحم|حقوق همکار و شریک|وفای به عهد'],
+['fast','روزه واجب (ماه رمضان)',10,'نیت روزه|سحری|امساک از مفطرات|پرهیز از غیبت و دروغ در روزه|افطار به‌موقع']];
+const HR=[['h0','گفتاری (زبان)',5,'دروغ|غیبت|تهمت|فحش و ناسزا|مسخره کردن|سخن‌چینی|افشای راز|قسم دروغ|خلف وعده|بیهوده‌گویی|جدال و مراء|آزار با زبان'],
+['h1','دیداری (چشم)',5,'نگاه به نامحرم|دیدن محتوای حرام|نگاه تحقیرآمیز|نگاه به حریم خصوصی|نگاه حسادت‌آمیز|دیدن مجالس گناه'],
+['h2','شنیداری (گوش)',5,'شنیدن غیبت|موسیقی حرام|شنیدن تهمت و دروغ|استراق سمع|شنیدن سخن لغو'],
+['h3','عملی (دست)',5,'آزار و ضرب|تصرف در مال دیگران|رشوه|سرقت|نوشتن مطلب حرام|لمس حرام|خیانت در امانت'],
+['h4','رفتاری و حرکتی (پا)',5,'رفتن به مجلس گناه|گام در مسیر ظلم|راه رفتن از روی تکبر|حضور در محل حرام|فرار از وظیفه'],
+['h5','شکم',5,'غذای حرام|ربا|مال شبهه‌ناک|مال یتیم|پرخوری|مال بدون خمس'],
+['h6','جنسی',5,'نگاه شهوانی|خودارضایی|رابطه نامشروع|فکر و خیال شهوانی|محتوای مبتذل'],
+['h7','قوای بدنی (قلب، ذهن، نیت)',5,'ریا|حسد|کینه|تکبر|سوءظن|عُجب|ناامیدی از رحمت|نیت ناپاک|غفلت'],
+['h8','پوست و سایر اعضا',5,'لمس نامحرم|آرایش و زینت حرام|پوشش نامناسب|آسیب به بدن|خالکوبی حرام'],
+['h9','سبک زندگی',5,'اسراف|قطع رحم|عاق والدین|ظلم اجتماعی|کم‌فروشی|تضییع وقت|ترک امر به معروف|فساد در معامله|ترک جماعت و عبادت']];
+const MUS='نماز شب|نماز اول وقت|نوافل یومیه|نماز جماعت|نماز غفیله|تلاوت قرآن|تدبر در قرآن|دعای عهد|زیارت عاشورا|دعای کمیل|ذکر تسبیحات حضرت زهرا|تعقیبات نماز|استغفار صبح|صلوات|ذکر یونسیه|روزه مستحبی|صدقه روزانه|انفاق پنهانی|احسان به والدین|دیدار با ارحام|عیادت بیمار|تشییع جنازه|اطعام نیازمند|کمک به حل مشکل مؤمن|اصلاح بین دو نفر|سلام کردن|خوش‌رویی|مسواک زدن|وضو با طهارت دائمی|خواندن دعای ورود به مسجد|حضور در مسجد|سجده شکر|طلب علم|مطالعه کتاب سودمند|محاسبه نفس شبانه|دعا برای دیگران|عطر زدن|غسل جمعه|زیارت اهل قبور|پاسخ به نیاز دیگران|خواب با وضو|ذکر مأثور خواب|شکرگزاری|صبر بر مشکلات|تبسم|سحرخیزی|درخت‌کاری|قرض‌الحسنه|کمک به یتیم|نیکی به همسایه'.replace(/ /g,' ');
+const MAK='پرخوری|خوردن در حال سیری|خوردن با دست چپ|خوابیدن بین‌الطلوعین|خوابیدن در ابتدای شب|خوابیدن به پشت|سخن زیاد|قسم راست بی‌دلیل|عجله در کار|تأخیر در نماز|نماز در حال خواب‌آلودگی|نگاه به آینه در حال نماز|بازی با ریش یا موی صورت|خندیدن بلند|اخم و ترش‌رویی|امتناع از دعوت مؤمن|خوردن غذای داغ|فوت کردن در غذا|خوردن پیاز و سیر خام قبل از مسجد|ایستاده آب خوردن|آب‌ نوشیدن بیش‌ازحد با غذا|سیر‌ نشدن از دنیا|بیکاری|سستی|تنبلی|تأخیر در توبه|حسرت بر گذشته|شکایت از روزگار|سوءظن ناروا|ورود بی‌اجازه|نشستن در راه‌ها|مزاح بیش‌ازحد|تأخیر در پرداخت مزد|امساک در انفاق|ترک مسواک|ترک غسل جمعه|ایستادن در برابر قبله بدون نیاز|تف کردن در مسجد|تأخیر در وفای قرض|اعتماد بر غیرخدا|گفتگو در مسجد درباره دنیا|ولخرجی|خودستایی|زیاده‌روی در شوخی|پرگویی بی‌فایده|نشستن در مجلس گناه|اهمال در ورزش|بیدار‌ماندن بی‌دلیل|دوری از همنشین صالح'.replace(/ /g,' ');
+const LIST={mus:MUS,mak:MAK};
+const cd=()=>S.days[key(D)]||(S.days[key(D)]={p:[0,0,0,0,0],s:{},c:{}});
+const g=(d,k)=>+(d.s[k]||0);
+const prs=d=>d.p.reduce((a,v)=>a+(v?PT[v-1][1]:0),0);
+const tot=d=>prs(d)+['tah','haq','fast'].reduce((a,k)=>a+g(d,k),0)+HR.reduce((a,c)=>a+g(d,c[0]),0)+g(d,'mus')-g(d,'mak');
+const isR=d=>d.ram!==undefined?d.ram:+hf.format(D)==9;
+const upd=()=>{document.getElementById('tot').textContent=FA(Math.round(tot(cd())*10)/10)};
+function sp(i,v){const d=cd();d.p[i]=d.p[i]==v?0:v;save();R()}
+function sv(k,v){const d=cd();d.s[k]=+v;save();const e=document.getElementById('v_'+k);if(e)e.textContent=FA(v)+e.dataset.m;upd()}
+function tg(id){const d=cd();d.c[id]=!d.c[id];if(!d.c[id])delete d.c[id];save();R()}
+function rm(v){cd().ram=v;save();R()}
+function nav(n){D=new Date(D.getFullYear(),D.getMonth(),D.getDate()+n,12);R()}
+function gd(){D=jg(+ys.value,+ms.value,+ds.value);R()}
+function addC(s){const e=document.getElementById('cu_'+s);const t=e.value.trim();if(!t)return;S.cu[s].push(t);save();R()}
+function delC(s,i){S.cu[s].splice(i,1);save();R()}
+const ch=(id,t,neg)=>`<button class="chip ${cd().c[id]?'on':''} ${neg?'neg':''}" onclick="tg('${id}')">${t}</button>`;
+function cat(c,hint){const d=cd(),v=g(d,c[0]);return `<div class="card"><h3>${c[1]}<small id="v_${c[0]}" data-m=" از ${FA(c[2])}">${FA(v)} از ${FA(c[2])}</small></h3>${hint?`<p class="hint">${hint}</p>`:''}<input type="range" min="0" max="${c[2]}" step="1" value="${v}" oninput="sv('${c[0]}',this.value)"><div class="chips">${c[3].split('|').map((t,i)=>ch(c[0]+'.'+i,t,hint)).join('')}</div></div>`}
+function sec(s,title,sign){const d=cd(),it=LIST[s].split('|'),v=g(d,s);
+return `<div class="card"><h3>${title}<small id="v_${s}" data-m="">${sign}${FA(v)}</small></h3><p class="hint">موارد انجام‌شده را علامت بزنید و امتیاز را خودتان تعیین کنید.</p><input type="number" min="0" step="0.5" value="${v}" oninput="sv('${s}',this.value||0)"><div class="chips">${it.map((t,i)=>ch(s+'.'+i,t,s=='mak')).join('')}${S.cu[s].map((t,i)=>ch(s+'.c'+i,t+' ★',s=='mak')).join('')}</div></div>
+<div class="card"><h3>افزودن مورد دلخواه (سایر)</h3><div class="row"><input type="text" id="cu_${s}" placeholder="عنوان..."><button class="btn" onclick="addC('${s}')">افزودن</button></div>${S.cu[s].length?`<div class="chips">${S.cu[s].map((t,i)=>`<button class="chip" onclick="delC('${s}',${i})">✕ ${t}</button>`).join('')}</div>`:''}</div>`}
+function obl(){const d=cd();let h=`<div class="card"><h3>نمازهای یومیه<small>${FA(prs(d))} از ۳۰</small></h3>`;
+PR.forEach((n,i)=>{h+=`<div class="pr"><b>${n}</b><div>${PT.map((t,j)=>`<button class="b ${d.p[i]==j+1?'on':''}" onclick="sp(${i},${j+1})">${t[0]}<i>${FA(t[1])}</i></button>`).join('')}</div></div>`});
+h+='</div>'+cat(OB[0])+cat(OB[1]);
+h+=`<div class="card"><label><input type="checkbox" ${isR(d)?'checked':''} onchange="rm(this.checked)"> امروز از ماه مبارک رمضان است</label></div>`;
+if(isR(d))h+=cat(OB[2]);return h}
+function hrm(){const d=cd(),s=HR.reduce((a,c)=>a+g(d,c[0]),0);return `<div class="card"><h3>ترک محرمات<small>${FA(s)} از ۵۰</small></h3><p class="hint">برای هر دسته، امتیاز پاکی (۵ = بدون گناه) را خودتان بدهید و گناهان رخ‌داده را فقط جهت اطلاع علامت بزنید.</p></div>`+HR.map(c=>cat(c,'گناهان رخ‌داده:')).join('')}
+function lab(id){const[k,i]=id.split('.');const c=HR.find(c=>c[0]==k);return c?c[3].split('|')[i]:null}
+function dash(){const days=[];for(let i=29;i>=0;i--){const x=new Date(D.getFullYear(),D.getMonth(),D.getDate()-i,12);days.push(S.days[key(x)]||null)}
+const T=days.map(d=>d?tot(d):0),avg=a=>a.length?a.reduce((x,y)=>x+y,0)/a.length:0;
+const rec=days.filter(d=>d&&tot(d)!=0),a7=avg(T.slice(23).filter(v=>v)),a30=avg(T.filter(v=>v));
+const all=Object.values(S.days),best=all.length?Math.max(...all.map(tot)):0;
+const t=tot(cd()),pct=Math.max(0,Math.min(1,t/100));const gr=t>=90?'عالی':t>=75?'خوب':t>=50?'متوسط':'نیازمند تلاش بیشتر';
+let st=0;for(let i=T.length-1;i>=0&&T[i]>=60;i--)st++;
+const mean=f=>avg(rec.map(f));
+const G=[['واجبات',d=>prs(d)+g(d,'tah')+g(d,'haq')+g(d,'fast'),50],['محرمات',d=>HR.reduce((a,c)=>a+g(d,c[0]),0),50],['مستحبات (افزوده)',d=>g(d,'mus'),20],['مکروهات (کسر)',d=>g(d,'mak'),20]];
+const cnt={};all.forEach(d=>Object.keys(d.c).forEach(k=>{if(k[0]=='h'&&lab(k))cnt[k]=(cnt[k]||0)+1}));
+const top=Object.entries(cnt).sort((a,b)=>b[1]-a[1]).slice(0,6);
+const bars=T.map((v,i)=>{const h=Math.max(0,v)/110*90;return `<rect x="${i*10+1}" y="${95-h}" width="7" height="${h}" rx="2" fill="${v>=75?'var(--pr)':v>=50?'var(--ac)':v>0?'var(--bad)':'var(--bd)'}"/>`}).join('');
+return `<div class="card" style="text-align:center"><svg width="130" height="130" viewBox="0 0 100 100"><circle cx="50" cy="50" r="40" fill="none" stroke="var(--bd)" stroke-width="9"/><circle cx="50" cy="50" r="40" fill="none" stroke="var(--pr)" stroke-width="9" stroke-linecap="round" stroke-dasharray="${pct*251.3} 251.3" transform="rotate(-90 50 50)"/><text x="50" y="56" text-anchor="middle" font-size="22" font-weight="800" fill="var(--tx)" font-family="Vazirmatn,Tahoma">${FA(Math.round(t))}</text></svg><div><b>${gr}</b></div><small class="hint">امتیاز روز انتخاب‌شده</small></div>
+<div class="grid"><div class="card st"><b>${FA(Math.round(a7))}</b><span>میانگین ۷ روز</span></div><div class="card st"><b>${FA(Math.round(a30))}</b><span>میانگین ۳۰ روز</span></div><div class="card st"><b>${FA(rec.length)}</b><span>روز ثبت‌شده (۳۰ روز اخیر)</span></div><div class="card st"><b>${FA(Math.round(best))}</b><span>بهترین امتیاز · پیاپی ≥۶۰: ${FA(st)}</span></div></div>
+<div class="card"><h3>روند ۳۰ روز اخیر</h3><svg viewBox="0 0 300 100" width="100%">${bars}</svg></div>
+<div class="card"><h3>میانگین بخش‌ها</h3>${G.map(([n,f,m])=>{const v=mean(f);return `<div>${n}<small style="float:left">${FA(Math.round(v*10)/10)} از ${FA(m)}</small></div><div class="bar"><div style="width:${Math.min(100,v/m*100)}%;${n.includes('مکروه')?'background:var(--bad)':''}"></div></div>`}).join('')}</div>
+<div class="card"><h3>پرتکرارترین گناهان ثبت‌شده</h3>${top.length?top.map(([k,n])=>`<div>${lab(k)}<small style="float:left">${FA(n)} بار</small></div>`).join(''):'<p class="hint">هنوز موردی ثبت نشده است.</p>'}</div>`}
+function bak(){return `<div class="card"><h3>پشتیبان‌گیری</h3><p class="hint">متن زیر را کپی کنید و در جای امن نگه دارید.</p><textarea id="bk" rows="6" readonly>${JSON.stringify(S)}</textarea><div class="row" style="margin-top:8px"><button class="btn" onclick="dl()">⬇ دانلود فایل پشتیبان</button><button class="btn" onclick="cp()">کپی پشتیبان</button></div></div>
+<div class="card"><h3>بازیابی اطلاعات</h3><textarea id="rs" rows="5" placeholder="متن پشتیبان را اینجا بچسبانید..."></textarea><div class="row" style="margin-top:8px"><button class="btn" onclick="rst(document.getElementById('rs').value)">بازیابی از متن</button></div><p class="hint" style="margin-top:10px">یا انتخاب فایل پشتیبان (JSON):</p><input type="file" accept=".json,.txt" onchange="fl(this)"><p id="msg" class="hint"></p></div>
+<div class="card"><h3>پاک‌سازی کامل</h3><button class="btn r" id="rb" onclick="wipe()">حذف همه اطلاعات</button></div>`}
+function cp(){const e=document.getElementById('bk');e.select();try{navigator.clipboard.writeText(e.value)}catch(x){document.execCommand('copy')}msg('کپی شد.')}
+function msg(t){const m=document.getElementById('msg');if(m)m.textContent=t}
+function rst(t){try{const o=JSON.parse(t);if(!o.days)throw 0;o.cu=o.cu||{mus:[],mak:[]};S=o;fixS();save();R();alert('بازیابی انجام شد.')}catch(e){msg('متن پشتیبان معتبر نیست.')}}
+function fl(i){const f=i.files[0];if(!f)return;const r=new FileReader();r.onload=()=>rst(r.result);r.readAsText(f)}
+function wipe(){const b=document.getElementById('rb');if(b.dataset.s){S={days:{},cu:{mus:[],mak:[]}};fixS();save();R()}else{b.dataset.s=1;b.textContent='برای تأیید دوباره بزنید'}}
+const TABS=['داشبورد','واجبات','محرمات','مستحبات','مکروهات','یادآور','پشتیبان'];
+function R(){const j=jp(D),cy=jp(now()).year;
+document.getElementById('db').innerHTML=`<button onclick="nav(-1)">→</button><b>${D.toLocaleDateString('fa-IR',{weekday:'long'})} ${FA(j.day)} ${MN[j.month-1]} ${FA(j.year)}</b><button onclick="nav(1)">←</button><select id="ds" onchange="gd()">${Array.from({length:31},(_,i)=>`<option value="${i+1}" ${i+1==j.day?'selected':''}>${FA(i+1)}</option>`).join('')}</select><select id="ms" onchange="gd()">${MN.map((n,i)=>`<option value="${i+1}" ${i+1==j.month?'selected':''}>${n}</option>`).join('')}</select><select id="ys" onchange="gd()">${[cy-2,cy-1,cy,cy+1].map(y=>`<option value="${y}" ${y==j.year?'selected':''}>${FA(y)}</option>`).join('')}</select><button onclick="D=now();R()">امروز</button>`;
+document.querySelectorAll('#tabs button').forEach((b,i)=>b.classList.toggle('on',i==TAB));
+document.getElementById('app').innerHTML=(TAB<6?SHB:'')+[dash,obl,hrm,()=>sec('mus','مستحبات','+'),()=>sec('mak','مکروهات','−'),rem,bak][TAB]();upd()}
+/* ===== Capacitor: اوقات شرعی، یادآور، دانلود پشتیبان ===== */
+const CITY={'تهران':[35.6892,51.389],'مشهد':[36.2605,59.6168],'اصفهان':[32.6546,51.668],'شیراز':[29.5918,52.5837],'تبریز':[38.08,46.2919],'قم':[34.6416,50.8746],'اهواز':[31.3183,48.6706],'کرج':[35.8327,50.9915],'کرمانشاه':[34.3277,47.0778],'رشت':[37.2808,49.5832],'یزد':[31.8974,54.3569],'کرمان':[30.2839,57.0834],'زاهدان':[29.4963,60.8629],'ارومیه':[37.5527,45.0761],'بندرعباس':[27.1865,56.2808],'سایر':null};
+const PN=['اذان صبح','اذان ظهر','وقت نماز عصر','اذان مغرب','اذان عشاء'];
+const rad=Math.PI/180,sn=x=>Math.sin(x*rad),cs=x=>Math.cos(x*rad),fx=(a,b)=>a-b*Math.floor(a/b);
+/* روش مؤسسه ژئوفیزیک دانشگاه تهران: صبح ۱۷٫۷°، مغرب ۴٫۵°، عشاء ۱۴° */
+function pt(date,lat,lng){
+const tz=-date.getTimezoneOffset()/60,D=Date.UTC(date.getFullYear(),date.getMonth(),date.getDate(),12)/864e5+2440587.5-2451545;
+const g=fx(357.529+0.98560028*D,360),q=fx(280.459+0.98564736*D,360),L=fx(q+1.915*sn(g)+0.02*sn(2*g),360),e=23.439-3.6e-7*D;
+const RA=fx(Math.atan2(cs(e)*sn(L),cs(L))/rad/15,24),eq=q/15-RA,d=Math.asin(sn(e)*sn(L))/rad;
+const noon=fx(12-eq,24)+tz-lng/15,T=a=>Math.acos((-sn(a)-sn(d)*sn(lat))/(cs(d)*cs(lat)))/rad/15;
+const as=-Math.atan(1/(1+Math.tan(Math.abs(lat-d)*rad)))/rad;
+const m0=new Date(date.getFullYear(),date.getMonth(),date.getDate()).getTime();
+return [noon-T(17.7),noon,noon+T(as),noon+T(4.5),noon+T(14)].map(h=>new Date(m0+h*36e5));}
+const fmt=t=>isNaN(t)?'—':FA(t.toLocaleTimeString('en-GB',{hour:'2-digit',minute:'2-digit'}));
+const CP=()=>window.Capacitor,LN=()=>CP()&&CP().Plugins&&CP().Plugins.LocalNotifications;
+const nat=()=>CP()&&CP().isNativePlatform&&CP().isNativePlatform();
+const rmsg=t=>{const e=document.getElementById('rmsg');if(e)e.textContent=t};
+function ss(k,v){S.set[k]=v;save()}
+function pk(i,v){S.set.pr[i]=v?1:0;save()}
+function ll(k,v){S.set[k]=+v;S.set.city='سایر';save();R()}
+function cityC(v){S.set.city=v;if(CITY[v]){S.set.lat=CITY[v][0];S.set.lng=CITY[v][1]}save();R()}
+async function gps(){try{let c;const G=CP()&&CP().Plugins.Geolocation;
+if(G){await G.requestPermissions();c=(await G.getCurrentPosition()).coords}
+else c=(await new Promise((a,b)=>navigator.geolocation.getCurrentPosition(a,b))).coords;
+S.set.lat=+c.latitude.toFixed(4);S.set.lng=+c.longitude.toFixed(4);S.set.city='سایر';save();R();rmsg('موقعیت ثبت شد؛ «ذخیره و زمان‌بندی» را بزنید.')}
+catch(e){rmsg('دریافت موقعیت ممکن نشد؛ شهر را دستی انتخاب کنید.')}}
+async function sched(test){
+const L=LN(),s=S.set;if(!L)return rmsg('اعلان‌ها فقط در برنامه‌ی اندروید فعال می‌شوند.');
+try{const p=await L.requestPermissions();if(p.display!=='granted')return rmsg('اجازه‌ی اعلان داده نشد؛ از تنظیمات گوشی فعالش کنید.');
+try{await L.createChannel({id:'adhan',name:'اوقات شرعی',importance:5,vibration:true});await L.createChannel({id:'night',name:'محاسبه نفس شبانه',importance:4,vibration:true})}catch(e){}
+try{const x=await L.checkExactNotificationSetting();if(x.exact_alarm!=='granted')await L.changeExactNotificationSetting()}catch(e){}
+const pe=await L.getPending();if(pe.notifications.length)await L.cancel({notifications:pe.notifications.map(n=>({id:n.id}))});
+const list=[],n0=new Date();
+for(let k=0;k<14;k++){const dd=new Date(n0.getFullYear(),n0.getMonth(),n0.getDate()+k,12);
+pt(dd,s.lat,s.lng).forEach((t,i)=>{const at=new Date(t.getTime()-s.lead*6e4);
+if(s.pr[i]&&at>n0)list.push({id:1000+k*10+i,title:'🕌 '+PN[i],body:s.lead?`${FA(s.lead)} دقیقه تا اذان؛ آماده‌ی نماز اول وقت شوید.`:'وقت نماز فرا رسیده؛ نماز اول وقت امتیاز بیشتری دارد.',schedule:{at,allowWhileIdle:true},channelId:'adhan'})})}
+if(s.night){const[h,m]=s.nt.split(':').map(Number);list.push({id:1,title:'🌙 محاسبه نفس شبانه',body:'وقت محاسبه‌ی امروز است؛ همین حالا ثبت کنید.',schedule:{on:{hour:h,minute:m},allowWhileIdle:true},channelId:'night'})}
+if(test===1)list.push({id:2,title:'🔔 آزمایش',body:'اعلان‌ها درست کار می‌کند.',schedule:{at:new Date(Date.now()+5000)},channelId:'adhan'});
+if(list.length)await L.schedule({notifications:list});
+s.on=1;save();rmsg(`${FA(list.length)} یادآور برای ۱۴ روز آینده زمان‌بندی شد.`)}
+catch(e){rmsg('خطا: '+(e.message||e))}}
+function rem(){const s=S.set,t=pt(new Date(),s.lat,s.lng);
+return `<div class="card"><h3>مکان و اوقات شرعی</h3><p class="hint">محاسبه به روش مؤسسه‌ی ژئوفیزیک دانشگاه تهران (جعفری) و کاملاً آفلاین.</p><div class="row"><select class="sel" onchange="cityC(this.value)">${Object.keys(CITY).map(c=>`<option ${c==s.city?'selected':''}>${c}</option>`).join('')}</select><button class="btn" onclick="gps()">📍 موقعیت من</button></div><div class="row" style="margin-top:8px"><input type="number" step="0.0001" value="${s.lat}" onchange="ll('lat',this.value)"><input type="number" step="0.0001" value="${s.lng}" onchange="ll('lng',this.value)"></div><p class="hint">عرض و طول جغرافیایی</p></div>
+<div class="card"><h3>یادآور نمازها</h3>${PR.map((n,i)=>`<div class="pr"><label><input type="checkbox" ${s.pr[i]?'checked':''} onchange="pk(${i},this.checked)"> ${n}</label><b>${fmt(t[i])}</b></div>`).join('')}<div class="row" style="margin-top:10px"><span>اعلان چند دقیقه قبل از اذان</span><input type="number" min="0" max="60" value="${s.lead}" onchange="ss('lead',+this.value)"></div></div>
+<div class="card"><h3>محاسبه‌ی نفس شبانه</h3><div class="row"><label><input type="checkbox" ${s.night?'checked':''} onchange="ss('night',this.checked)"> فعال</label><input class="sel" type="time" value="${s.nt}" onchange="ss('nt',this.value)"></div></div>
+<div class="row"><button class="btn" onclick="sched()">ذخیره و زمان‌بندی</button><button class="btn" onclick="sched(1)">اعلان آزمایشی</button></div><p id="rmsg" class="hint"></p>`}
+async function dl(){const name='nafs-backup-'+key(now()).replace(/\//g,'-')+'.json',txt=JSON.stringify(S);
+try{if(nat()){const F=CP().Plugins.Filesystem;await F.writeFile({path:name,data:txt,directory:'CACHE',encoding:'utf8'});
+const u=await F.getUri({path:name,directory:'CACHE'});await CP().Plugins.Share.share({title:name,url:u.uri,dialogTitle:'ذخیره یا ارسال فایل پشتیبان'})}
+else{const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([txt],{type:'application/json'}));a.download=name;a.click()}}
+catch(e){msg('ذخیره‌ی فایل ممکن نشد؛ از «کپی پشتیبان» استفاده کنید.')}}
+function init(){const L=LN();if(!L)return;
+L.addListener('localNotificationActionPerformed',a=>{if(a.notification.id==1){D=now();TAB=1;R()}});
+if(S.set.on)sched()}
+
+/* ===== تم رنگی + اشتراک‌گذاری تصویری ===== */
+const THC={tur:['#0f766e','#2bc6b4','#fff','فیروزه‌ای'],grn:['#4f8f6b','#a5d6b8','#fff','سبز پاستلی'],blu:['#4a78b5','#a9cbee','#fff','آبی پاستلی'],red:['#c4605f','#f2aaa6','#fff','قرمز پاستلی'],yel:['#e6b422','#fbe18a','#2b2200','زرد']};
+const SHB='<div class="row" style="margin:0 0 12px"><button class="btn" onclick="shareImg()">🖼 اشتراک‌گذاری تصویری</button></div>';
+function applyTh(){const k=S.set.theme||'tur';document.documentElement.dataset.th=k;document.getElementById('th').innerHTML=Object.keys(THC).map(x=>`<button title="${THC[x][3]}" class="${x==k?'on':''}" style="background:${THC[x][0]}" onclick="setTh('${x}')"></button>`).join('')}
+function setTh(k){S.set.theme=k;save();applyTh()}
+function imgData(){const d=cd(),j=jp(D),dt=D.toLocaleDateString('fa-IR',{weekday:'long'})+' '+FA(j.day)+' '+MN[j.month-1]+' '+FA(j.year);
+const st=['—','اول وقت','میان وقت','آخر وقت'],ob=prs(d)+g(d,'tah')+g(d,'haq')+g(d,'fast'),hr=HR.reduce((a,c)=>a+g(d,c[0]),0),om=isR(d)?60:50,r1=Math.round;
+const ck=s=>LIST[s].split('|').map((t,i)=>[s+'.'+i,t]).concat(S.cu[s].map((t,i)=>[s+'.c'+i,t])).filter(a=>d.c[a[0]]).slice(0,16).map(a=>({l:'✓ '+a[1]}));
+const base={dt};
+if(TAB==0){const T=[];for(let i=29;i>=0;i--){const x=new Date(D.getFullYear(),D.getMonth(),D.getDate()-i,12),r=S.days[key(x)];T.push(r?tot(r):0)}
+const t=tot(d);return{...base,title:'داشبورد',big:FA(r1(t)),sub:t>=90?'عالی':t>=75?'خوب':t>=50?'متوسط':'نیازمند تلاش بیشتر',rows:[{l:'واجبات',r:FA(ob)+' از '+FA(om),f:ob/om},{l:'محرمات',r:FA(hr)+' از ۵۰',f:hr/50},{l:'مستحبات (افزوده)',r:'+'+FA(g(d,'mus'))},{l:'مکروهات (کسر)',r:'−'+FA(g(d,'mak'))}],bars:T}}
+if(TAB==1){const rows=PR.map((n,i)=>({l:n,r:st[d.p[i]],f:d.p[i]?PT[d.p[i]-1][1]/6:0}));OB.slice(0,isR(d)?3:2).forEach(c=>rows.push({l:c[1],r:FA(g(d,c[0]))+' از ۱۰',f:g(d,c[0])/10}));return{...base,title:'واجبات',big:FA(ob)+' از '+FA(om),rows}}
+if(TAB==2)return{...base,title:'ترک محرمات',big:FA(hr)+' از ۵۰',rows:HR.map(c=>{const n=Object.keys(d.c).filter(k=>k.startsWith(c[0]+'.')).length;return{l:c[1],r:FA(g(d,c[0]))+' از ۵'+(n?' · '+FA(n)+' مورد':''),f:g(d,c[0])/5}})};
+if(TAB==3||TAB==4){const s=TAB==3?'mus':'mak',r=ck(s);return{...base,title:TAB==3?'مستحبات':'مکروهات',neg:TAB==4,big:(TAB==3?'+':'−')+FA(g(d,s)),sub:'امتیاز '+(TAB==3?'مستحبات':'مکروهات'),rows:r.length?r:[{l:'موردی علامت نخورده است'}]}}
+const t=pt(D,S.set.lat,S.set.lng);return{...base,title:'اوقات شرعی — '+S.set.city,rows:PR.map((n,i)=>({l:n,r:fmt(t[i])}))}}
+function wrap(x,t,w){const L=[];let c='';t.split(' ').forEach(a=>{const n=c?c+' '+a:a;if(x.measureText(n).width>w&&c){L.push(c);c=a}else c=n});if(c)L.push(c);return L}
+async function shareImg(){try{const o=imgData(),W=1080,P=70,RH=92,th=THC[S.set.theme||'tur'],F='VazirLocal,Vazirmatn,Tahoma,sans-serif';
+try{await document.fonts.load('700 30px VazirLocal');await document.fonts.load('700 30px Vazirmatn')}catch(e){}
+const c=document.createElement('canvas'),x=c.getContext('2d');c.width=W;c.height=10;
+const fs=(w,s)=>{x.font=`${w} ${s}px ${F}`;x.direction='rtl'};fs(400,28);
+const ded=['هدیه‌ای از بنده‌ی حقیر سیدحسین — برای شهادتم دعا کنید','تقدیم به شهید علی (مهران) بلوچی که محاسبه نفس را به ما یاد داد و به یاد قائد شهید، قدس‌الله نفسه الزکیه'].flatMap(t=>wrap(x,t,W-2*P));
+const top=320,bigH=o.big?(o.sub?260:200):0,barH=o.bars?250:0,H=top+bigH+o.rows.length*RH+barH+80+ded.length*46+90;
+c.height=H;x.fillStyle='#f6faf8';x.fillRect(0,0,W,H);
+const gr=x.createLinearGradient(0,0,W,top);gr.addColorStop(0,th[0]);gr.addColorStop(1,th[1]);x.fillStyle=gr;x.fillRect(0,0,W,top);
+x.fillStyle=th[2];x.textAlign='right';fs(800,70);x.fillText('🌙 نفس‌نگار',W-P,130);fs(400,34);x.fillText(o.dt,W-P,200);fs(700,44);x.fillText(o.title,W-P,270);
+let y=top;x.textAlign='center';
+if(o.big){x.fillStyle=o.neg?'#c0392b':th[0];fs(800,o.big.length>8?84:120);x.fillText(o.big,W/2,y+135);if(o.sub){x.fillStyle='#6a7b74';fs(400,36);x.fillText(o.sub,W/2,y+200)}y+=bigH}
+o.rows.forEach(r=>{x.textAlign='right';x.fillStyle='#1b2a25';fs(600,34);x.fillText(r.l,W-P,y+44);
+if(r.r){x.textAlign='left';x.fillStyle=o.neg?'#c0392b':th[0];fs(700,34);x.fillText(r.r,P,y+44)}
+if(r.f!==undefined){x.fillStyle='#e0e8e4';x.fillRect(P,y+60,W-2*P,12);x.fillStyle=th[0];x.fillRect(W-P-(W-2*P)*Math.max(0,Math.min(1,r.f)),y+60,(W-2*P)*Math.max(0,Math.min(1,r.f)),12)}y+=RH});
+if(o.bars){y+=30;x.textAlign='right';x.fillStyle='#6a7b74';fs(400,28);x.fillText('روند ۳۰ روز اخیر',W-P,y);const bw=(W-2*P)/30;
+o.bars.forEach((v,i)=>{const h=Math.max(0,v)/110*160;x.fillStyle=v>=75?th[0]:v>=50?'#d9a441':v>0?'#c0392b':'#e0e8e4';x.fillRect(W-P-(i+1)*bw+3,y+200-h,bw-6,Math.max(h,4))});y+=210}
+y+=30;x.fillStyle='#d5ded9';x.fillRect(P,y,W-2*P,2);y+=60;x.textAlign='center';x.fillStyle='#6a7b74';fs(400,28);ded.forEach(l=>{x.fillText(l,W/2,y);y+=46});
+const url=c.toDataURL('image/png'),name='nafsnegar-'+key(D).replace(/\//g,'-')+'.png';
+if(nat()){const Fs=CP().Plugins.Filesystem;await Fs.writeFile({path:name,data:url.split(',')[1],directory:'CACHE'});const u=await Fs.getUri({path:name,directory:'CACHE'});await CP().Plugins.Share.share({title:'نفس‌نگار',url:u.uri,dialogTitle:'اشتراک‌گذاری تصویر'})}
+else{const b=await new Promise(r=>c.toBlob(r)),f=new File([b],name,{type:'image/png'});
+if(navigator.canShare&&navigator.canShare({files:[f]}))await navigator.share({files:[f],title:'نفس‌نگار'});else{const a=document.createElement('a');a.href=url;a.download=name;a.click()}}}
+catch(e){if(!/cancel|abort/i.test(e&&e.message||''))alert('ساخت یا اشتراک تصویر ممکن نشد.')}}
+
+
+function goTab(i){if(i==TAB)return;const dir=i>TAB?1:-1;TAB=i;R();
+if(!matchMedia('(prefers-reduced-motion:reduce)').matches)document.getElementById('app').animate([{opacity:0,transform:`translateX(${dir*-36}px)`},{opacity:1,transform:'none'}],{duration:340,easing:'cubic-bezier(.2,.8,.2,1)'});
+const b=document.querySelector('#tabs .on');if(b)b.scrollIntoView({behavior:'smooth',inline:'center',block:'nearest'})}
+document.getElementById('tabs').innerHTML=TABS.map((t,i)=>`<button onclick="goTab(${i})">${t}</button>`).join('');
+applyTh();R();init();
+</script><script>if('serviceWorker' in navigator&&location.protocol.indexOf('http')==0&&!(window.Capacitor&&Capacitor.isNativePlatform&&Capacitor.isNativePlatform()))addEventListener('load',()=>navigator.serviceWorker.register('sw.js'))</script>
+</body></html>
